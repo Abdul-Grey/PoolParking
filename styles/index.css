@@ -1,0 +1,46 @@
+				body{
+					background:#66cdaa;
+					font-family:serif;
+					text-align:center;
+				}
+				#navigation{
+					padding:0.1em 0.1em 0.1em 0.1em;
+					font-size:2em;
+				}
+				a{
+					padding:0.1em 0.1em 0.1em 0.1em;
+					margin: 0.1em 0.1em 0.1em 0.1em;
+					
+				}
+				a:visited,a:link{
+					color:black;
+					text-decoration:none;
+				}
+				p#search_passage{
+					text-align:center;
+				}
+				input[type=text],input[type=password],input[type=email],textarea{
+					width: 25%;
+ 					padding: 12px;
+					border: 1px solid #ccc;
+					border-radius: 4px;
+					resize: vertical;
+				}
+				button{
+					height:3em;
+					width:5em;
+					padding12px;
+					border: 1px solid #CCC;
+				}
+				button#validate{
+					height:2.7em;
+					width:27%;
+					padding12px;
+					border: 1px solid #CCC;
+				}
+				#logo{
+					border-radius:1em;
+				}
+				.home{
+					width:50%;
+				}

@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Booking</title>
+		<meta charset="utf-8">
+		<link href="styles/index.css" rel="stylesheet" type="text/css">
+		<link href="styles/navigation.css" rel="stylesheet" type="text/css">
+		<style>
+			button#finish{
+					height:2.5em;
+					width:27%;
+					padding12px;
+					border: 1px solid #CCC;
+				}
+			span#open{
+				float:right;
+			}
+			select{
+				height:2.7em;
+				width:27%;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="mySidenav" class="sidenav">
+			  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			  <a href="search.html">Home</a>
+			  <a href="blog.html">Blog</a>
+			  <a href="help.html">Help</a>
+			  <a href="#">Payment</a>
+			  <a href="index.html">Log out</a>
+		</div>
+		<span id="open" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+		<br><br>
+		<h1>Enter details</h1>
+		<form>
+			<input type="text" name="name" placeholder="Name" required><br><br>
+			<input type="text" name="contact" placeholder="Mobile/EmailId" required><br><br>
+			<select name="parkingplace" required>
+				<option value="car">Car</option>
+				<option value="Bike">Bike</option>
+			</select><br><br>
+			<input type="text" name="token" placeholder="Parking Number" required><br><br>
+		</form>
+		<button id="finish">Ok</button>
+		<script src="scripts/JQuery/jquery-3.2.1.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$("#finish").click(function(){
+				alert("Successfully updated\nCheck your phone or email");
+				
+				var url=window.location.toString();
+				var len = (url.match("[A-z]*.html"))[0].length;
+				url = url.substring(0,url.length-len);
+				window.location=url+"search.html";
+			});
+			});
+		</script>
+		<script src="scripts/navigation.js"></script>
+	</body>
+</html>

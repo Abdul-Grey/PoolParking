@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Dash board</title>
+		<meta charset="utf-8">
+		<link href="styles/index.css" type="text/css" rel="stylesheet">
+		<link href="styles/malls.css" type="text/css" rel="stylesheet">
+		<link href="styles/navigation.css" type="text/css" rel="stylesheet">
+		<style>
+			span#open{
+				float:right;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="mySidenav" class="sidenav">
+			  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			  <a href="search.html">Home</a>
+			  <a href="blog.html">Blog</a>
+			  <a href="help.html">Help</a>
+			  <a href="#">Payment</a>
+			  <a href="index.html">Log out</a>
+		</div>
+		<span id="open" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+		<br><br>
+
+		<p id="search_passage">
+				<input type="text" id="search" placeholder="Search..." required>
+				<button id="submit"> Go!! </button>
+		</p>
+		
+
+		<table border="1" align="center" style="margin-top:10%;border-collapse:collapse">
+			<tr height="200">
+				<td class="mall" width="210">CMR</td>
+				<td width="210" class="mall">MOT LE BLANC</td>
+			</tr>
+			<tr height="200">
+				<td width="210" class="mall">PRADA</td>
+				<td width="210" class="mall">FASHION</td>
+			</tr>
+		</table>
+		<script src="scripts/JQuery/jquery-3.2.1.min.js"></script>
+		<script src="scripts/malls.js"></script>
+		<script src="scripts/navigation.js"></script>
+		<script src="scripts/JQUERY-UI/external/jquery/jquery.js"></script>
+		<script src="scripts/JQUERY-UI/jquery-ui.js"></script>
+		<link href="scripts/JQUERY-UI/jquery-ui.css" rel="stylesheet">
+		<script src="scripts/autocomplete.js"></script>
+		<script>
+			$(document).ready(function (){
+
+				$("#submit").click(function(){
+					var url=window.location.toString();
+					var len = (url.match("[A-z]*[0-9].html"))[0].length;
+					url = url.substring(0,url.length-len);
+					var index=Math.floor(Math.random()*3);
+					$("#search").html("");
+					window.location=url+"malls"+index+".html";
+				});
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,62 @@
+<!doctypehtml>
+	<html>
+		<head>
+			<title>Parking Slots</title>
+			<meta charset="utf-8">
+			<link href="styles/index.css" type="text/css" rel="stylesheet">
+			<style>
+				#help{
+					font-size:1.5em;
+				}
+			</style>
+				
+		</head>
+		<body>
+			<p id="logo">
+				<img src="images/poolparking.png" alt="Ouch!!! No preview." width="200" height="200">
+			</p>
+			<nav id="navigation">
+				<a class="navigation" href="index.html">Home</a>
+				<a class="navigation" href="dashboard.html">Dash Board</a>
+				<a class="navigation" href="blog.html">Blog</a>
+				<a class="navigation" href="#">Help</a>
+			</nav><br><br>
+			<div id="help">
+				<p id="message">
+					You as customers are so valuable to us.<br>
+					And we're here to help. <br>
+					Please leave us a message and let us know your problem.<br>
+					Our team will help you ASAP.<br>
+					Have a great day!! :)<br>
+				</p>
+				<form>
+				<input id="name" type="text" name="name" placeholder="Name" required><br><br>
+				<input id="email" type="email" name="email" placeholder="Email" required><br><br>
+				<textarea id="comment" placeholder="Enter you comments" row="20" col="20">
+				</textarea>
+				<br><br>
+				</form>
+				<button id="validate" class="help">Help</button>
+			</div><br><br><br>
+			<script src="scripts/JQuery/jquery-3.2.1.min.js"></script>
+			<script>
+			$(document).ready(function(){
+			$(".navigation").hover(
+				function (){
+					$(this).css({"text-decoration":"underline"})
+				},
+				function (){
+					$(this).css({"text-decoration":"none"})
+			});
+			$(".help").click(function (){
+				alert("You'll hear from us shortly.\nAppreciate you.");
+				document.getElementById("comment").value="";
+				document.getElementById("name").value="";
+				document.getElementById("email").value="";
+			});
+			});
+		</script>
+
+	</body>
+
+</html>

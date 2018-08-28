@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Dash board</title>
+		<meta charset="utf-8">
+		<link href="styles/index.css" type="text/css" rel="stylesheet">
+		<link href="styles/navigation.css" type="text/css" rel="stylesheet">
+		<style>
+			span#open{
+				float:right;
+			}
+			#greet{
+				font-size:2em;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="mySidenav" class="sidenav">
+			  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			  <a href="#">Home</a>
+			  <a href="#">Users</a>
+			  <a href="#">Stats</a>
+			  <a href="index.html">Log out</a>
+		</div>
+		<span id="open" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+		<br><br>
+		<p id="greet"> Hello boss!!<br>Today's stats<br></p>
+		<table border="1" align="center" style="margin-top:10%;border-collapse:collapse">
+			<tr height="200">
+				<td class="mall" width="210">CARS</td>
+				<td width="210" class="mall">40</td>
+			</tr>
+			<tr height="200">
+				<td width="210" class="mall">BIKES</td>
+				<td width="210" class="mall">60</td>
+			</tr>
+		</table>
+		<script src="scripts/JQuery/jquery-3.2.1.min.js"></script>
+		<script src="scripts/malls.js"></script>
+		<script src="scripts/navigation.js"></script>
+		<script src="scripts/JQUERY-UI/external/jquery/jquery.js"></script>
+		<script src="scripts/JQUERY-UI/jquery-ui.js"></script>
+		<link href="scripts/JQUERY-UI/jquery-ui.css" rel="stylesheet">
+		</script>
+	</body>
+</html>

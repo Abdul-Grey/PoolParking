@@ -1,0 +1,65 @@
+			table{
+				table.layout:table;
+				text-align:center;
+				font-size:2em;
+				border:1px solid black;
+			}
+			tr{
+				height:100px;
+				border:1px solid black;
+			}
+			td{
+				width:200px;
+				border:1px solid black;
+			}
+			.booked{
+				background:black;
+				color:white;
+			}
+			.bike{
+				background:powderblue;
+				color:green;
+				text-decoration:underline;
+			}
+			.car{
+				background:red;
+				color:green;
+				text-decoration:underline;
+			}
+			#_green{
+				font-size:1em;
+				background:green;
+				padding: 0.1em 0.1em 0.1em 0.1em;
+				margin: 0.1em 0.1em 0.1em 0.1em;
+			}
+			#_black{
+				font-size:1em;
+				background:black;
+				color:white;
+				padding: 0.1em 0.1em 0.1em 0.1em;
+				margin: 0.1em 0.1em 0.1em 0.1em;
+			}
+			#_red{
+				font-size:1em;
+				background:red;
+				padding: 0.1em 0.1em 0.1em 0.1em;
+				margin: 0.1em 0.1em 0.1em 0.1em;
+			}
+			#_blue{
+				font-size:1em;
+				background:powderblue;
+				padding: 0.1em 0.1em 0.1em 0.1em;
+				margin: 0.1em 0.1em 0.1em 0.1em;
+			}
+			summary{
+				font-size:2em;
+			}	
+			#next{
+				height:3em;
+				width:30%;
+				background:maroon;
+			}
+			span#open{
+				float:left;
+			}
+

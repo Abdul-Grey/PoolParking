@@ -1,0 +1,46 @@
+<!doctypehtml>
+	<html>
+		<head>
+			<title>Parking Slots</title>
+			<meta charset="utf-8">
+			<link href="styles/index.css" type="text/css" rel="stylesheet">			
+		</head>
+		<body>
+			<p id="logo">
+				<img src="images/poolparking.png" alt="Ouch!!! No preview." width="200" height="200">
+			</p>
+			<nav id="navigation">
+				<a class="navigation" href="#">Home</a>
+				<a class="navigation" href="dashboard.html">Dash Board</a>
+				<a class="navigation" href="blog.html">Blog</a>
+				<a class="navigation" href="help.html">Help</a>
+			</nav><br><br>
+			<div id="main">
+				<p id="images">
+					<img class="home" src="images/chauffer.png" alt="Chauffer"><br>
+					<img class="home" src="images/service.png" alt="Service"><br>
+					<img class="home" src="images/gladiate.png" alt="How we roll"><br>
+				</p>
+			</div>
+			<footer id="media">
+				<p>
+					Follow us on<br>
+					<img class="home" src="images/media.png"><br>
+				</p>
+			</footer>
+		
+		<script src="scripts/JQuery/jquery-3.2.1.min.js"></script>
+		<script>
+			$(".navigation").hover(
+				function (){
+					$(this).css({"text-decoration":"underline"})
+				},
+				function (){
+					$(this).css({"text-decoration":"none"})
+			});
+		</script>
+		<script src="scripts/autocomplete.js"></script>
+		<link href="scripts/JQUERY-UI/jquery-ui.css" rel="stylesheet">
+	</body>
+
+</html>
