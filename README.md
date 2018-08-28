@@ -1,9 +1,9 @@
 # PoolParking
-A project I wanted to do.
+## A project I wanted to do.
 
-I enjoyed creating this project
+### I enjoyed creating this project
 
-click the below to see the webiste in action
+## click the below to see the website in action
 
 
-https://abdul-grey.github.io/PoolParking/
+# https://abdul-grey.github.io/PoolParking/
